@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 997px) {
+@media screen and (min-width: 660px) {
     section {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
     }
