@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/projeto-style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="estilos/projeto-media-query.css">
+    <title>Projetos</title>
+</head>
+<body>
+    <body onresize="mudouTamanho()">
+        <header>
+                <div id="tamanho-header">
+                    <nav id="menu">
+                        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+                            <menu id="itens">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="https://github.com/gabrielhenrike" rel="external" target="_blank" >GITHUB</a></li>
+                            <li><a href="https://www.linkedin.com/in/gabriel-henrique-9663b823a/" rel="external" target="_blank">LINKEDIN</a></li>
+                            <li><a href="#">CONTATO</a></li>
+                            <li><a href="">PROJETOS</a></li>
+                        </ul>
+                    </menu>
+                    </nav>
+                </div>
+        </header>
+        <section>
+            <div>
+                <p class="projeto"><a href="https://gabrielhenrike.github.io/projeto-login/" target="_blank">Projeto Login</a></p>
+                <img src="imagem/projeto-login.jpeg" alt="projeto login">
+            </div>
+            <div>
+                <p class="projeto"><a href="https://gabrielhenrike.github.io/projeto-social/" target="_blank">Projeto Rede Social</a></p>
+                <img src="imagem/projeto-social.jpeg" alt="projeto social">
+            </div>
+            <div>
+                <p class="projeto"><a href="https://gabrielhenrike.github.io/projeto-android/" target="_blank">Projeto Android</a></p>
+                <img src="imagem/projeto-android.jpeg" alt="projeto android">
+            </div>
+            <div>
+                <p class="projeto"><a href="https://gabrielhenrike.github.io/projeto-cordel/" target="_blank">Projeto Cordel</a></p>
+                <img src="imagem/projeto-cordel.jpeg" alt="projeto cordel">
+            </div>
+            <div>
+                <p class="projeto"><a href="https://gabrielhenrike.github.io/projeto-catalogo-de-carros/" target="_blank">Projeto Catálogo</a></p>
+                <img src="imagem/projeto-catalogo.jpeg" alt="projeto catalogo">
+            </div>
+        </section>
+        <footer>
+            <p class="rodape">Site criado por <a href="https://github.com/gabrielhenrike/" target="_blank">Gabriel Henrique</a> | 2023</p>
+        </footer>
+
+        <script>
+
+            function mudouTamanho () {
+                if (window.innerWidth >= 768) {
+                    itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+    
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
+</body>
+</html>
