@@ -49,9 +49,7 @@ i#burguer:hover {
 }
 
 menu {
-    display: flex;
-    flex-direction: column;
-
+    display: none;
 }
 
 menu > ul {
